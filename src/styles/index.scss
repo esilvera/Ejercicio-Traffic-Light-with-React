@@ -11,3 +11,65 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.semaforo {
+    height: 300px;
+    width: 100px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .luzroja {
+    background-color: red;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: whitesmoke;
+    margin-top: 15px;
+    /* box-shadow:0 0 20px black; */
+  }
+  .luzamarilla {
+    background-color: yellow;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: whitesmoke;
+    margin-top: 15px;
+    /* box-shadow:0 0 20px black; */
+  }
+  .luzverde {
+    background-color: green;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: whitesmoke;
+    margin-top: 15px;
+    /* box-shadow:0 0 20px black; */
+  }
+  .luzrojabrillante {
+    background-color: red;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: whitesmoke;
+    margin-top: 15px;
+    box-shadow:0 0 20px black;
+  }
+  .luzamarillabrillante {
+    background-color: yellow;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: whitesmoke;
+    margin-top: 15px;
+    box-shadow:0 0 20px black;
+  }
+  .luzverdebrillante {
+    background-color: green;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: whitesmoke;
+    margin-top: 15px;
+    box-shadow:0 0 20px black;
+  }
