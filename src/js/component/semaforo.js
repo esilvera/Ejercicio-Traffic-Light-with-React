@@ -1,51 +1,27 @@
 import React, { useState } from "react";
 
 export function Semaforo() {
-	const [color, setColor] = useState("luzroja");
+	const [color, setColor] = useState(""); //Todos con luz original hasta el evento click que agrega color a useState con setColor
 
 	return (
 		<div className="semaforo">
-			<input
-				onClick={() => setColor("luzrojabrillante")}
-				className={color}
-			/>
-			<input
-				onClick={() => setColor("luzamarillabrillante")}
-				className={color}
-			/>
-			<input
-				onClick={() => setColor("luzverdebrillante")}
-				className={color}
-			/>
+			<div
+				onClick={() => setColor("luzroja")}
+				className={
+					"luz luzroja" + (color === "luzroja" ? " luzbrillante" : "")
+				}></div>
+			<div
+				onClick={() => setColor("luzamarilla")}
+				className={
+					"luz luzamarilla" +
+					(color === "luzamarilla" ? " luzbrillante" : "")
+				}></div>
+			<div
+				onClick={() => setColor("luzverde")}
+				className={
+					"luz luzverde" +
+					(color === "luzverde" ? " luzbrillante" : "")
+				}></div>
 		</div>
 	);
-}
-
-{
-	/* 			
-
-	<input
-				onClick={() => setColor("{box-shadow:0 0 20px black}")}
-				className="luzroja"
-				style={color}
-			/>
-
-
-
-            
-            	useEffect(() => {
-		            setColor("yellow");
-	            }, []);
-
-
-            	const brillar = evento => {
-		             alert("debe brillar");
-	            };
-
-            <button onClick={evento => brillar(evento)}></button>
-            
-            
-            
-            
-            */
 }

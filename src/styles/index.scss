@@ -1,75 +1,31 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
 .semaforo {
     height: 300px;
     width: 100px;
-    border: 1px solid black;
-    display: flex;
+    background: black;
+    /* border: 1px solid black; */
+    display: inline-block;
     flex-direction: column;
     align-items: center;
   }
-  .luzroja {
-    background-color: red;
+.luz {
     height: 80px;
     width: 80px;
     border-radius: 50%;
-    border: whitesmoke;
     margin-top: 15px;
+    /* background-color: red; */
     /* box-shadow:0 0 20px black; */
   }
-  .luzamarilla {
-    background-color: yellow;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    border: whitesmoke;
-    margin-top: 15px;
-    /* box-shadow:0 0 20px black; */
-  }
-  .luzverde {
-    background-color: green;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    border: whitesmoke;
-    margin-top: 15px;
-    /* box-shadow:0 0 20px black; */
-  }
-  .luzrojabrillante {
-    background-color: red;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    border: whitesmoke;
-    margin-top: 15px;
-    box-shadow:0 0 20px black;
-  }
-  .luzamarillabrillante {
-    background-color: yellow;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    border: whitesmoke;
-    margin-top: 15px;
-    box-shadow:0 0 20px black;
-  }
-  .luzverdebrillante {
-    background-color: green;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    border: whitesmoke;
-    margin-top: 15px;
-    box-shadow:0 0 20px black;
-  }
+.luzbrillante {
+    box-shadow:0 0 50px blue;
+}
+.luzroja {
+  background: red;
+}
+.luzamarilla {
+  background: yellow;
+}
+.luzverde {
+  background: green;
+}
